@@ -1,0 +1,543 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import CoreUI styles
+@import "~@coreui/coreui/scss/coreui.scss";
+
+// Some temp fixes
+@import "fixes";
+
+textarea:focus {
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+input:focus {
+  outline: none;
+}
+
+.MuiDataGrid-root .MuiDataGrid-columnHeader:focus-within, .MuiDataGrid-root .MuiDataGrid-cell:focus-within {
+  outline: none !important;
+}
+
+.modal-header {
+  border-bottom: 0px;
+}
+
+.c-sidebar{
+    background-color: #3A3F52;
+    color: #fff;
+    width: 220px;
+  }
+  .c-sidebar .c-sidebar-nav-link, .c-sidebar .c-sidebar-nav-dropdown-toggle{
+    color: #fdfdfd;
+  }
+  .c-sidebar .c-sidebar-nav-title{
+    color: #8389a1;
+  }
+  .c-sidebar .c-sidebar-nav-link:hover, .c-sidebar .c-sidebar-nav-dropdown-toggle:hover{
+    background: #1f222e;
+  }
+  .c-sidebar .c-sidebar-nav-link .c-sidebar-nav-icon, .c-sidebar .c-sidebar-nav-dropdown-toggle .c-sidebar-nav-icon{
+    color: #fdfdfd;
+  }
+  .c-sidebar .c-sidebar-nav-link.c-active, .c-sidebar .c-active.c-sidebar-nav-dropdown-toggle{
+    color: #fdfdfd;
+    background: #1f222e;
+  }
+  .c-sidebar .c-sidebar-nav-link.c-active .c-sidebar-nav-icon, .c-sidebar .c-active.c-sidebar-nav-dropdown-toggle .c-sidebar-nav-icon{
+    color: #fdfdfd
+  }
+  .c-sidebar .c-sidebar-brand{//탑 레프트 아이콘 배경
+  background: #3A3F52;
+  }
+  @media (min-width: 992px){
+    html:not([dir="rtl"]) .c-sidebar.c-sidebar-lg-show:not(.c-sidebar-right).c-sidebar-fixed ~ .c-wrapper, html:not([dir="rtl"]) .c-sidebar.c-sidebar-show:not(.c-sidebar-right).c-sidebar-fixed ~ .c-wrapper
+    {
+      margin-left: 220px;;
+    }
+  }
+
+  .c-sidebar .c-sidebar-minimizer {
+    background-color: #3A3F52;
+  }
+
+.hover1 {
+    background-color: #f8f8f8;
+}
+
+.badge-color-info{
+    background-color: blue;
+    color: white;
+    padding:2px;
+    font-size: 10px;
+    max-height: 20px;
+}
+.badge-color-success{
+    background-color: green;
+    color: white;
+    padding:2px;
+}
+.badge-color-danger{
+    background-color: red;
+    color: white;
+    padding:2px;
+}
+
+
+.check-btn {
+  background-color: #666EF0;
+  color: #fff;
+}
+.check-btn:hover {
+  background-color: #fff;
+  color: #666EF0;
+  border: 1px solid #666EF0;
+}
+
+.btn-info {
+  background-color: #2BB2AC;
+  color: #fff;
+  border: 1px solid #2BB2AC;
+}
+.btn-info:hover {
+  background-color: #20998f;
+  color: #fff;
+  border: 1px solid #20998f;
+}
+.btn-info:visited {
+  background-color: #20998f;
+  color: #fff;
+  border: 1px solid #20998f;
+}
+.btn-info:active {
+  background-color: #20998f;
+  color: #fff;
+  border: 1px solid #20998f;
+}
+.btn-info:focus {
+  background-color: #20998f;
+  color: #fff;
+  border: 1px solid #20998f;
+}
+.btn-outline-info {
+  background-color: #fff;
+  color: #2BB2AC;
+  border: 1px solid #2BB2AC;
+}
+.btn-outline-info:hover {
+  background-color: #20998f !important;
+  color: #fff;
+  border: 1px solid #20998f !important;
+}
+.btn-outline-info:active {
+  background-color: #20998f;
+  color: #fff;
+  border: 1px solid #20998f;
+}
+.btn-outline-info:visited {
+  background-color: #20998f;
+  color: #fff;
+  border: 1px solid #20998f;
+}
+.btn-outline-info:focus {
+  background-color: #20998f;
+  color: #fff;
+  border: 1px solid #20998f;
+}
+.btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active {
+  background-color: #20998f;
+  color: #fff;
+  border: 1px solid #20998f;
+}
+.fc .fc-button-primary:disabled {
+  background-color: #666EF0;
+  
+}
+
+.react-datepicker__month .react-datepicker__month-text {
+  margin: 6px 2px !important;
+}
+
+.react-datepicker-popper[data-placement^=top] .react-datepicker__triangle::before, .react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::before, .react-datepicker-popper[data-placement^=top] .react-datepicker__triangle::after, .react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::after {
+  border: hidden !important;
+}
+
+.react-datepicker__header{
+  border-bottom: hidden !important;
+  padding-top: 10px !important;
+  background-color: #fff !important;
+  border-radius: 0.8rem !important;
+}
+
+.react-datepicker__month-text:hover.react-datepicker__month--selected:hover {
+  background-color: #4b53eb;
+}
+
+.react-datepicker__month-text.react-datepicker__month--selected, .react-datepicker__day--keyboard-selected, .react-datepicker__month-text--keyboard-selected, .react-datepicker__quarter-text--keyboard-selected, .react-datepicker__year-text--keyboard-selected {
+  background-color: #FFB425 !important;
+  color: #fff;
+}
+
+.react-datepicker {
+  font-size: 15px !important;
+  border: hidden !important;
+    border-radius: 0.8rem !important;
+    box-shadow: 4px 4px 14px 1px rgba(138, 138, 138, 0.2);
+}
+
+.react-datepicker__current-month {
+  font-size: 1rem !important; 
+}
+
+.react-datepicker__day--selected {
+  background-color: #FFB425 !important;
+}
+
+.react-datepicker__navigation {
+  top: 12px !important; 
+}
+
+.react-datepicker__day-name, .react-datepicker__day {
+  margin: 0.4rem !important; 
+}
+
+.modal-backdrop {
+    opacity: 0.1 !important;
+    background-color: #0a0a0a;
+}
+
+.card {
+  border-radius: 12px;
+  border: hidden;
+}
+
+.modal-content {
+  border: hidden;
+  border-radius: 0.6rem;
+  border-color: hidden;
+}
+
+.swal2-content {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+
+.swal2-popup {
+  border-radius: 0.8rem !important;
+  border: hidden !important;
+}
+
+.px-4 {
+  background-color: #666EF0;
+  color: #fff;
+}
+
+.fc-custom0-button {
+  background-color: #e2e2e2 !important;
+  border: hidden !important;
+  color: #141414 !important;
+}
+
+.fc-custom1-button {
+  background-color: #666EF0 !important;
+  border: hidden !important;
+}
+
+.fc-custom2-button {
+  background-color: #ED776D !important;
+  border: hidden !important;
+}
+
+.fc-custom3-button {
+  background-color: #2BB2AC !important;
+  border: hidden !important;
+}
+
+.fc-custom4-button {
+  background-color: #FFB425 !important;
+  border: hidden !important;
+}
+
+.fc-custom5-button {
+  background-color: #816BAB !important;
+  border: hidden !important;
+}
+
+.offcanvas-end {
+  width: 300px;
+}
+
+.toaster-top-full, .toaster-top-center, .toaster-top-right, .toaster-top-left, .toaster-bottom-full, .toaster-bottom-center, .toaster-bottom-right, .toaster-bottom-left {
+  width: 300px;
+  position: absolute;
+  left: -16px;
+}
+
+.toast-header {
+  border: 0px;
+}
+.toast {
+  border-radius: 8px;
+}
+.membername {
+  display: inline;
+  width: 200px;
+}
+.inputcomment {
+  display: inline;
+
+}
+
+.row>* {
+  width: auto;
+}
+
+.offcanvas {
+  border: 0px;
+background-color: rgba(213, 213, 213, 0.5);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+}
+
+.toast {
+  border: 0px;
+}
+.MuiDataGrid-root {
+  border: 0px !important;
+}
+
+@media (min-width: 980px) {
+  .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+    margin-right:auto;
+    margin-left:auto;
+    max-width:960px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+    max-width:1320px;
+    margin-right:auto;
+    margin-left:auto;
+  }
+}
+.sidebar:not(.sidebar-end)~* {
+  --cui-sidebar-occupy-start: 16rem;
+}
+.sidebar.sidebar-fixed {
+  position: fixed;
+  top:0;
+  bottom: 0;
+  z-index: 1030;
+}
+
+.css-1mkxsol-MuiSlider-root {
+  width: 400px !important;
+}
+
+.css-yafthl-MuiSlider-markLabel {
+  color: #CED0FF !important;
+}
+
+.table>:not(:first-child) {
+  border-top: 1px solid;
+}
+
+.badge-danger {
+  background-color: #ffeeec;
+  color:#D33F22;
+}
+
+.badge-warning {
+  background-color:#fff8ef;
+  color: #cc820a;
+}
+.badge-info {
+  background-color:#f1f9ff;
+  color: #146fb4;
+}
+.badge-success {
+  background-color:#dfeee6;
+  color: #357958;
+}
+.badge-light {
+  background-color:#f5f5f5;
+  color: #747474;
+}
+
+
+.fc-direction-ltr .fc-button-group > .fc-button:not(:first-child) {
+  background-color: #FFB425;
+  border-color: #FFB425;
+  border-radius: 40px;
+}
+.fc-direction-ltr .fc-button-group > .fc-button:not(:last-child) {
+  background-color: #FFB425;
+  border-color: #FFB425;
+  border-radius: 40px;
+}
+.fc .fc-button-primary:disabled {
+  background-color: #666EF0 !important;
+  border-color: #666EF0 !important;
+}
+.c-header {
+  border-bottom: 0px;
+  background-color: #EBEDEF;
+}
+.fc-direction-ltr .fc-daygrid-event.fc-event-end {
+  border-radius: 50px !important;
+}
+.fc-direction-ltr .fc-daygrid-event.fc-event-start {
+  border-radius: 50px !important;
+}
+.calendardesign {
+background-color: rgba(173, 174, 255, 0.5);
+color: #666EF0;
+box-shadow: 2px 2px 14px 2px #8594c0;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+  border: 0px !important;
+}
+
+.fc-theme-standard td, .fc-theme-standard th {
+  border: 0px !important;
+  
+}
+
+.fc-daygrid-day-frame {
+  border-radius: 14px;
+  border: 2px solid #fff;
+  background-color: #f8f8f8;
+}
+.fc-day-today .fc-daygrid-day-frame {
+  background-color: #ffe7e1 !important;
+}
+
+
+
+.fc .fc-daygrid-day.fc-day-today {
+  background-color: #fff !important;
+}
+
+.fc-custom0-button .fc-button .fc-button-primary {
+  border-radius: 30px !important;
+}
+
+.react-datepicker-popper{
+  z-index: 100 !important;
+}
+
+.fc-daygrid-event {
+display: inline-block;
+font-size: 14px !important;
+}
+
+.fc-custom0-button {
+  border-radius: 40px !important;
+  margin: 0 2px !important;
+  box-shadow: 2px 2px 14px 2px #e6e6e6;
+}
+.fc-custom1-button {
+  border-radius: 40px !important;
+  margin: 0 2px !important;
+  box-shadow: 2px 2px 14px 2px #dddddd;
+}
+.fc-custom2-button {
+  border-radius: 40px !important;
+  margin: 0 2px !important;
+  box-shadow: 2px 2px 14px 2px #dddddd;
+}
+.fc-custom3-button {
+  border-radius: 40px !important;
+  margin: 0 2px !important;
+  box-shadow: 2px 2px 14px 2px #dddddd;
+}
+.fc-custom4-button {
+  border-radius: 40px !important;
+  margin: 0 2px !important;
+  box-shadow: 2px 2px 14px 2px #dddddd;
+}
+.fc-custom5-button {
+  border-radius: 40px !important;
+  margin: 0 2px !important;
+  box-shadow: 2px 2px 14px 2px #dddddd;
+}
+.back-color {
+  background-color: rgba(200, 218, 255, 0.3);
+  border-radius: 18px;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  margin: 30px 10px;
+  right: -5%;
+}
+.img-home {
+  z-index: 3;
+  position:absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-0%, -50%);
+}
+.back-color-members {
+  background-color: rgba(200, 218, 255, 0.3);
+  border-radius: 18px;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  margin: 30px 10px;
+  right: -5%;
+}
+.img-home-members {
+  z-index: 3;
+  position:absolute;
+  top: 40%;
+  left: 35%;
+  transform: translate(50%, -50%);
+}
+
+.list-title {
+  z-index: 3;
+  position:absolute;
+  top: 35%;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+.back-color-title {
+  background-color: rgba(200, 218, 255, 0.3);
+  border-radius: 14px;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  left:-2%;
+  height: 94px;
+}
+.back-color-title-pink {
+  background-color: rgba(255, 200, 200, 0.3);
+  border-radius: 14px;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  left:-2%;
+  height: 94px;
+}
+.back-color-title-green {
+  background-color: rgba(190, 233, 222, 0.3);
+  border-radius: 14px;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  left:-4%;
+  height: 94px;
+}
+.fc-h-event .fc-event-title {
+margin-left: 8px;
+}
+.css-wjh20t-MuiPagination-ul {
+  text-align: right !important;
+  justify-content: right !important;
+}
+.c-main {
+  padding-top: 28px;
+}
